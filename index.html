@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pomodoro Timer | Aiden Berzins</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon"
+      href="https://cdn4.iconfinder.com/data/icons/food-drink-14/24/Tomato-512.png" />
+  </head>
+  <body onload="updateClock(); setInterval('updateClock()', 1000 )">
+    <section class="pomodoro-wrapper">
+      <div class="pomodoro-timer">
+        <div>
+          <div>
+            <div id="currentTime">Clock</div>
+            <button class="timer-button active">Pomodoro</button>
+            <button class="timer-button">Short Break</button>
+            <button class="timer-button">Long Break</button>
+          </div>
+          <div id="timer">00:01</div>
+          <button id="startButton" class="stopped" onclick="timerButton()">Start</button>
+          <button id="stopButton" class="stop" onclick="restartTimer()">Reset</button>
+        </div>
+        <div class="motivation">Keep Going!</div>
+      </div>
+    </section>
+  </body>
+  <<script src="scripts.js"></script>
+</html>
